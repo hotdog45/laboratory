@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="100dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/goto_flutter"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="90dp"
+        android:text="goto flutter!"
+        android:layout_marginTop="100dp" />
+    <TextView
+        android:id="@+id/goto_flutter2"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:text="goto flutter page2 !"
+        android:layout_marginTop="100dp" />
+    <TextView
+        android:id="@+id/goto_flutter3"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:text="goto flutter page3 !"
+        android:layout_marginTop="100dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
