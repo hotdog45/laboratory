@@ -1,10 +1,12 @@
 include ':app'
+
+//for flutter
 setBinding(new Binding([gradle: this]))
 evaluate(new File(
   settingsDir,
   '../laboratory_flutter_module/.android/include_flutter.groovy'
 ))
 rootProject.name = "laboratory"
-
+//可选，主要作用是可以在当前AS的Project下显示flutter_module以方便查看和编写Dart代码
 include ':laboratory_flutter_module'
 project(':laboratory_flutter_module').projectDir = new File('../laboratory_flutter_module')

@@ -17,18 +17,13 @@ class HiFlutterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_flutter)
-//        rl_title.visibility = View.GONE
-//        title_line.visibility = View.GONE
-
 
         val bundle = intent.extras
         if (bundle != null) {
             moduleName = bundle.getString("moduleName", "")
         }
         initFragment()
-
         send_flutter.setOnClickListener {
-
             HiFlutterBridge.instance!!.fire("onFun", mapOf(
                 "boarding-pass" to "123凄凄切切群群群群群群群",
                 "auth-token" to "456"
